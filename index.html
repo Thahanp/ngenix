@@ -1,53 +1,159 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <title>DriveEasy Car Rental</title>
 
-    <!-- Connect CSS -->
+    <!-- CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Welcome!</h1>
+    <nav>
+        <div class="logo">DriveEasy</div>
 
-        <p id="message">This is my first website.</p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <title>My Website</title>
 
-    <!-- Connect CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <section id="home" class="hero">
 
-<body>
+        <div class="hero-content">
+            <h1>Rent Your Dream Car</h1>
 
-    <div class="container">
-        <h1>Welcome!</h1>
+            <p>
+                Affordable and reliable cars for every journey.
+            </p>
 
-        <p id="message">This is my first website.</p>
+            <button onclick="scrollToCars()">
+                Browse Cars
+            </button>
+        </div>
 
-        <button onclick="changeText()">Click Me</button>
-    </div>
+    </section>
 
-    <!-- Connect JavaScript -->
+
+    <section id="cars" class="cars">
+
+        <h2>Our Cars</h2>
+
+        <div class="car-container">
+
+            <div class="car-card">
+
+                <div class="car-img">
+                    🚗
+                </div>
+
+                <h3>Honda City</h3>
+
+                <p>Automatic | 5 Seats | Petrol</p>
+
+                <h4>₹2,000 / Day</h4>
+
+                <button onclick="rentCar('Honda City', 2000)">
+                    Rent Now
+                </button>
+
+            </div>
+
+
+            <div class="car-card">
+
+                <div class="car-img">
+                    🚙
+                </div>
+
+                <h3>Hyundai Creta</h3>
+
+                <p>Automatic | 5 Seats | Diesel</p>
+
+                <h4>₹2,500 / Day</h4>
+
+                <button onclick="rentCar('Hyundai Creta', 2500)">
+                    Rent Now
+                </button>
+
+            </div>
+
+
+            <div class="car-card">
+
+                <div class="car-img">
+                    🏎️
+                </div>
+
+                <h3>BMW 3 Series</h3>
+
+                <p>Automatic | 5 Seats | Petrol</p>
+
+                <h4>₹5,000 / Day</h4>
+
+                <button onclick="rentCar('BMW 3 Series', 5000)">
+                    Rent Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+        <h2>Why Choose DriveEasy?</h2>
+
+        <div class="features">
+
+            <div>
+                <h3>🚘 Quality Cars</h3>
+                <p>Well-maintained and reliable vehicles.</p>
+            </div>
+
+            <div>
+                <h3>💰 Affordable</h3>
+                <p>Competitive rental prices.</p>
+            </div>
+
+            <div>
+                <h3>🛡️ Safe</h3>
+                <p>Safe and comfortable journeys.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Phone: +91 98765 43210</p>
+
+        <p>Email: support@driveeasy.com</p>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 DriveEasy Car Rental</p>
+    </footer>
+
+
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 
 </body>
 </html>
-        <button onclick="changeText()">Click Me</button>
-    </div>
-
-    <!-- Connect JavaScript -->
-    <script src="script.js"></script>
-
-</body>
-</html>
+```
