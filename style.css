@@ -14,9 +14,9 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0b0b0b;
-    color: #f5f5f5;
+    font-family: "Arial", sans-serif;
+    background: #f5f7fb;
+    color: #172033;
 }
 
 
@@ -25,9 +25,9 @@ body {
 ========================= */
 
 nav {
-    height: 75px;
+    height: 78px;
 
-    background-color: #080808;
+    background: rgba(255, 255, 255, 0.95);
 
     display: flex;
     align-items: center;
@@ -35,46 +35,53 @@ nav {
 
     padding: 0 8%;
 
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid #e6e9ef;
 
     position: sticky;
     top: 0;
     z-index: 100;
+
+    backdrop-filter: blur(12px);
 }
 
 .logo {
     font-size: 28px;
-    font-weight: bold;
 
-    color: #ffffff;
+    font-weight: 800;
 
-    letter-spacing: 1px;
+    color: #14213d;
+
+    letter-spacing: -1px;
 }
 
 .logo::after {
     content: ".";
-    color: #e63946;
+
+    color: #f97316;
 }
 
 nav ul {
     display: flex;
+
     gap: 35px;
 
     list-style: none;
 }
 
 nav a {
-    color: #cccccc;
+    color: #4b5563;
 
     text-decoration: none;
 
     font-size: 15px;
 
+    font-weight: 600;
+
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #e63946;
+    color: #f97316;
 }
 
 
@@ -83,21 +90,23 @@ nav a:hover {
 ========================= */
 
 .hero {
-    height: 600px;
+    height: 620px;
 
     background:
         linear-gradient(
             90deg,
-            rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.35)
+            rgba(8, 19, 40, 0.92),
+            rgba(8, 19, 40, 0.65),
+            rgba(8, 19, 40, 0.15)
         ),
-        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=90");
 
     background-size: cover;
+
     background-position: center;
 
     display: flex;
+
     align-items: center;
 
     padding-left: 8%;
@@ -110,326 +119,19 @@ nav a:hover {
 }
 
 .hero-content h1 {
-    font-size: 58px;
+    font-size: 64px;
 
-    line-height: 1.1;
+    line-height: 1.05;
 
-    margin-bottom: 20px;
-}
+    margin-bottom: 25px;
 
-.hero-content h1::first-line {
-    color: #ffffff;
+    letter-spacing: -2px;
 }
 
 .hero-content p {
     font-size: 19px;
 
-    color: #cccccc;
+    color: #d9e0ea;
 
-    margin-bottom: 30px;
-
-    line-height: 1.6;
-}
-
-
-/* =========================
-   BUTTON
-========================= */
-
-button {
-    border: none;
-
-    background-color: #e63946;
-
-    color: white;
-
-    padding: 13px 28px;
-
-    border-radius: 4px;
-
-    font-size: 15px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #b91c2a;
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 8px 20px rgba(230, 57, 70, 0.25);
-}
-
-
-/* =========================
-   CARS
-========================= */
-
-.cars {
-    padding: 90px 8%;
-
-    background-color: #0f0f0f;
-}
-
-.cars h2,
-.about h2,
-.contact h2 {
-    text-align: center;
-
-    font-size: 38px;
-
-    margin-bottom: 50px;
-
-    color: #ffffff;
-}
-
-.cars h2::after,
-.about h2::after,
-.contact h2::after {
-    content: "";
-
-    display: block;
-
-    width: 55px;
-
-    height: 3px;
-
-    background-color: #e63946;
-
-    margin: 15px auto 0;
-}
-
-
-/* Car Grid */
-
-.car-container {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 28px;
-}
-
-
-/* Car Card */
-
-.car-card {
-    background-color: #171717;
-
-    border: 1px solid #292929;
-
-    border-radius: 8px;
-
-    overflow: hidden;
-
-    padding-bottom: 25px;
-
-    text-align: center;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-
-    transition: 0.3s;
-}
-
-.car-card:hover {
-    transform: translateY(-8px);
-
-    border-color: #e63946;
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.5),
-        0 0 20px rgba(230, 57, 70, 0.08);
-}
-
-
-/* Car Image */
-
-.car-img {
-    height: 220px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #202020,
-            #111111
-        );
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 90px;
-
-    border-bottom: 1px solid #292929;
-}
-
-
-/* Car Information */
-
-.car-card h3 {
-    font-size: 23px;
-
-    margin-top: 25px;
-
-    color: #ffffff;
-}
-
-.car-card p {
-    color: #999999;
-
-    margin: 12px;
-
-    font-size: 14px;
-}
-
-.car-card h4 {
-    font-size: 21px;
-
-    margin: 18px;
-
-    color: #e63946;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-    background-color: #141414;
-
-    padding: 90px 8%;
-}
-
-.features {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-.features div {
-    text-align: center;
-
-    padding: 35px 25px;
-
-    background-color: #1b1b1b;
-
-    border: 1px solid #292929;
-
-    border-radius: 8px;
-
-    transition: 0.3s;
-}
-
-.features div:hover {
-    border-color: #e63946;
-
-    transform: translateY(-5px);
-}
-
-.features h3 {
-    margin-bottom: 15px;
-
-    color: #ffffff;
-}
-
-.features p {
-    color: #999999;
-
-    line-height: 1.6;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-    padding: 90px 8%;
-
-    background-color: #0b0b0b;
-}
-
-.contact p {
-    text-align: center;
-
-    margin: 12px;
-
-    color: #aaaaaa;
-
-    font-size: 16px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #050505;
-
-    color: #777777;
-
-    text-align: center;
-
-    padding: 30px;
-
-    border-top: 1px solid #222222;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    nav {
-        padding: 0 5%;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    .hero {
-        height: 550px;
-
-        padding: 0 7%;
-
-        text-align: center;
-
-        justify-content: center;
-    }
-
-    .hero-content h1 {
-        font-size: 40px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .car-container {
-        grid-template-columns: 1fr;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .cars h2,
-    .about h2,
-    .contact h2 {
-        font-size: 30px;
-    }
-}
+    margin-bott
 ```
